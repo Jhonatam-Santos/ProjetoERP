@@ -1,6 +1,4 @@
-package com.example.project01.domain.user;
-
-import com.example.project01.dto.UserDto;
+package com.example.project01.User.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -33,11 +31,4 @@ public class User {
     private String in_ativo;
     @Column(name = "email", nullable = false, unique = true)
     private String email;
-
-    public User(UserDto userDto) {
-        this.name = userDto.getName();
-        this.cpf_cnpj = userDto.getCpf_cnpj();
-        this.in_ativo = userDto.getIn_ativo();
-        this.email = userDto.getEmail();
-    }
 }

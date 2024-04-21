@@ -1,7 +1,7 @@
-package com.example.project01.mapper;
+package com.example.project01.User.mapper;
 
-import com.example.project01.domain.user.User;
-import com.example.project01.dto.UserDto;
+import com.example.project01.User.dto.UserDto;
+import com.example.project01.User.entity.User;
 
 public class UserMapper {
     
